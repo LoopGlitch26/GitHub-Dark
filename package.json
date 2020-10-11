@@ -1,40 +1,26 @@
 {
-  "name": "github-dark",
-  "version": "2.0.70",
-  "description": "Dark GitHub style",
-  "license": "CC-BY-SA-4.0",
+  "name": "GitHub-Dark",
+  "version": "4.0.98",
+  "license": "BSD-2-Clause",
   "repository": "StylishThemes/GitHub-Dark",
-  "homepage": "https://github.com/StylishThemes/GitHub-Dark",
+  "private": true,
   "engines": {
     "node": ">=12"
   },
-  "scripts": {
-    "authors": "bash tools/authors.sh",
-    "build": "npm run generate && npm run usercss",
-    "clean": "npm run perfectionist && node tools/clean.js",
-    "generate": "node tools/generate.js && npm run clean",
-    "imagemin": "bash tools/imagemin.sh",
-    "lint": "eslint . && stylelint github-dark.css themes/src",
-    "major": "npm run lint && npm run usercss && versions -p -d -C major github-dark.css github-dark.user.css",
-    "minor": "npm run lint && npm run usercss && versions -p -d -C minor github-dark.css github-dark.user.css",
-    "patch": "npm run lint && npm run usercss && versions -p -d -C patch github-dark.css github-dark.user.css",
-    "perfectionist": "perfectionist github-dark.css github-dark.css --indentSize 2 --maxAtRuleLength 250",
-    "test": "npm run lint",
-    "themes": "node tools/themes.js",
-    "update": "updates -cu && npm install",
-    "usercss": "node tools/usercss.js"
-  },
   "devDependencies": {
-    "clean-css": "4.2.3",
-    "eslint": "6.8.0",
-    "eslint-config-silverwind": "11.0.4",
-    "fast-glob": "3.2.2",
-    "fetch-css": "2.0.2",
+    "cssnano": "4.1.10",
+    "escape-string-regexp": "4.0.0",
+    "eslint": "7.10.0",
+    "eslint-config-silverwind": "21.0.0",
+    "fast-glob": "3.2.4",
+    "fetch-css": "3.1.4",
+    "open": "7.3.0",
     "perfectionist": "2.4.0",
-    "remap-css": "4.1.0",
-    "stylelint": "13.3.3",
+    "remap-css": "4.11.5",
+    "rimraf": "3.0.2",
+    "stylelint": "13.7.2",
     "stylelint-config-silverwind": "2.0.8",
-    "updates": "10.2.10",
-    "versions": "8.2.7"
+    "updates": "11.2.4",
+    "versions": "8.4.3"
   }
 }

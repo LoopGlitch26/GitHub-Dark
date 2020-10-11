@@ -1,13 +1,10 @@
 #!/usr/bin/env node
 "use strict";
 
-// this script does some cleanups after perfectionist ran
-
+const perfectionist = require("perfectionist");
 const {readFile} = require("fs").promises;
-const {join} = require("path");
-const {writeFile, exit} = require("./utils");
-
-const source = join(__dirname, "..", "github-dark.css");
+const {basename} = require("path");
+const {writeFile, exit, glob} = require("./utils");
 
 const replacements = [
   {from: /\{\/\*!/g, to: "{\n /*!"},
@@ -18,14 +15,26 @@ const replacements = [
   {from: /\/\*\[\[code-wrap/, to: "/*[[code-wrap"},
   {from: /,\u0020{2,}/g, to: ", "},
   {from: /\s+domain\(/g, to: " domain("},
+  {from: /\s+regexp\(/g, to: " regexp("},
 ];
 
-async function main() {
-  let css = await readFile(source, "utf8");
-  for (const replacement of replacements) {
-    css = css.replace(replacement.from, replacement.to);
-  }
-  await writeFile(source, css);
-}
+module.exports = async function main() {
+  for (const file of glob("src/*.css")) {
+    if (basename(file) === "template.css") continue;
 
-main().then(exit).catch(exit);
+    let css = await readFile(file, "utf8");
+
+    // run perfectionist
+    const result = await perfectionist.process(css, {indentSize: 2, maxAtRuleLength: 250});
+    css = result.css;
+
+    // replace replacements
+    for (const replacement of replacements) {
+      css = css.replace(replacement.from, replacement.to);
+    }
+
+    await writeFile(file, css);
+  }
+};
+
+module.exports().then(exit).catch(exit);

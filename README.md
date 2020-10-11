@@ -19,34 +19,48 @@
 </p>
 <h2 align="center">Your eyes will&nbsp;:heart:&nbsp;you.</h2>
 
+# TOC
+  * [Preview](#preview)
+  * [Installation](#installation)
+    * [Additional Userstyles](#additional-userstyles)
+    * [Supported GitHub Extensions](#supported-github-extensions)
+    * [Available Syntax Highlighting Themes](#available-syntax-highlighting-themes-demo)
+  * [Contributions and Development](#contributions-and-development)
+    * [Auto generated CSS](#auto-generated-css)
+    * [Manual override entries](#manual-override-entries)
+    * [Make targets](#make-targets)
+  * [Notes](#notes)
+
+
 ## Preview
 
-![Preview of GitHub Dark](./images/screenshots/after_blue.png)
+![Preview of GitHub Dark](./images/screenshot.png)
 
 ## Installation
 
-Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) or [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/) or [Cascadea for Safari](https://cascadea.app/) and then install using one of these methods:
-
-📦 [Install the usercss](https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/github-dark.user.css) which supports automatic updates and customization.<br>
-📦 [Install GitHub-Dark Script](https://raw.githubusercontent.com/StylishThemes/GitHub-Dark-Script/master/github-dark-script.user.js) which supports automatic updates and customization. Refer to its [README](https://github.com/StylishThemes/GitHub-Dark-Script/blob/master/README.md).<br>
-📦 [Install manually from GitHub](https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/github-dark.css) with no customization, but useful for development. The style is in Mozilla format.<br>
+1. Install [Stylus for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/), [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne), [Opera](https://addons.opera.com/en-gb/extensions/details/stylus/) or [Cascadea for Safari](https://cascadea.app/).
+2. Install [github-dark.user.css](https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/github-dark.user.css).
 
 ## Additional Userstyles
 
+⚙️ [GitHub Custom Fonts](https://raw.githubusercontent.com/StylishThemes/GitHub-Dark/master/github-custom-fonts.user.css)<br>
 ⚙️ [GitHub Blog Dark](https://github.com/StylishThemes/GitHub-Blog-Dark)<br>
 ⚙️ [GitHub Code Wrap](https://github.com/StylishThemes/GitHub-code-wrap)<br>
 ⚙️ [GitHub Commit Limit](https://github.com/StylishThemes/GitHub-Commit-Limit)<br>
-⚙️ [GitHub Community Dark](https://github.com/StylishThemes/GitHub-Community-Dark)<br>
+⚙️ [GitHub Community Dark](https://github.com/StylishThemes/Discourse-Dark) - Now part of Discourse Dark<br>
 ⚙️ [GitHub Compact Feed](https://github.com/StylishThemes/GitHub-Compact-Feed)<br>
-⚙️ [GitHub Dark Calendar Color Customizer](https://github.com/StylishThemes/Feature-Override-Styles)<br>
-⚙️ [GitHub Dark Diff Color Customizer](https://github.com/StylishThemes/Feature-Override-Styles)<br>
-⚙️ [GitHub Dark Element Borders](https://github.com/StylishThemes/Feature-Override-Styles)<br>
+⚙️ [GitHub Dark Calendar Color Customizer](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-calendar-color-customizer.user.css)<br>
+⚙️ [GitHub Dark Diff Color Customizer](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-diff-color-customizer.user.css)<br>
+⚙️ [GitHub Dark Element Borders](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-element-borders.user.css)<br>
 ⚙️ [GitHub Dark IMG Background Color](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-img-bg-clr.user.css)<br>
 ⚙️ [GitHub Feed Icons](https://github.com/StylishThemes/GitHub-Feed-Icons)<br>
 ⚙️ [GitHub FixedHeader](https://github.com/StylishThemes/GitHub-FixedHeader)<br>
 ⚙️ [GitHub Selected Tab Color](https://github.com/StylishThemes/GitHub-Selected-Tab-Color)<br>
 ⚙️ [GitHub Sticky Sidebar](https://github.com/StylishThemes/GitHub-Sticky-Sidebar)<br>
 ⚙️ [GitHub Tab Size](https://github.com/StylishThemes/GitHub-tab-size)<br>
+⚙️ [GitHub Custom Border Radii](https://github.com/StylishThemes/Feature-Override-Styles/blob/master/github-custom-border-radii.user.css)<br>
+⚙️ [GitHub Dark Custom Blame usercss](https://raw.githubusercontent.com/StylishThemes/Feature-Override-Styles/master/github-dark-custom-blame.user.css)<br>
+⚙️ [GitHub Upstream BugFixes usercss](https://github.com/StylishThemes/GitHub-Upstream-BugFixes/raw/master/github-upstream-bugfixes.user.css)<br>
 ⚙️ [Overlay Scrollbars](https://github.com/StylishThemes/Overlay-Scrollbars)<br>
 
 ## Supported GitHub Extensions
@@ -56,11 +70,13 @@ Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://add
 💾 [GitHub Notifications Dropdown](https://openuserjs.org/scripts/joeytwiddle/Github_Notifications_Dropdown)<br>
 💾 [GitHub Polls](https://github.com/apex/gh-polls)<br>
 💾 [Lovely forks](https://github.com/musically-ut/lovely-forks#lovely-forks)<br>
-💾 [npmhub](https://github.com/npmhub/npmhub)<br>
+💾 [Notifications Preview for GitHub](https://github.com/tanmayrajani/notifications-preview-github)<br>
+💾 [npm-hub](https://github.com/npmhub/npmhub)<br>
 💾 [OctoLinker](https://github.com/OctoLinker/OctoLinker)<br>
 💾 [Octotree](https://github.com/buunguyen/octotree/#octotree)<br>
 💾 [Refined GitHub](https://github.com/sindresorhus/refined-github)<br>
-💾 [ZenHub](https://www.zenhub.io/)<br>
+💾 [Sourcegraph Browser Extension](https://docs.sourcegraph.com/integration/browser_extension)<br>
+💾 [ZenHub](https://www.zenhub.com/)<br>
 
 ## Available Syntax Highlighting Themes ([Demo](https://stylishthemes.github.io/GitHub-Dark/))
 
@@ -100,35 +116,58 @@ Install [Stylus](https://add0n.com/stylus.html) for either [Firefox](https://add
 
 [1]:https://github.com/StylishThemes/GitHub-Dark/pull/568
 
+## Contributions and Development
+
+If you would like to contribute to this repository, please...
+
+1. [![fork](https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png) Fork](https://github.com/StylishThemes/GitHub-Dark/fork)
+2. Make sure you have these installed:
+
+- [`node`](https://nodejs.org): version 12 or greater
+- [`yarn`](https://classic.yarnpkg.com/en/docs/install/): version 1
+- `make`: available with UNIX-like OS, on Windows you can use [this](https://stackoverflow.com/a/54086635/808699)
+
+Then run `make deps` to install dependencies.
+
+⚠️ **Do not edit** the **`github-dark.user.css`** file.
+    All **changes are lost** on **`make build`**
+
+### Auto-generated CSS
+
+Contributing e.g. unstyled items, sources, extensions, etc. to name a few.
+
+See and edit the respective files in [/src/gen/](./src/gen/) then run `make build install` to rebuild and reinstall the style, then test your fixes and send a pull request.
+
+### Manual override entries
+
+Manual overrides to e.g. generated content or inline HTML styles to name a few.
+
+See and edit respective files in [`src`](./src) then run `make build install` to rebuild and reinstall the style, then test your fixes and send a pull request.
+
+### Make targets
+
+- `make deps`: Install development dependencies into `Github Dark/node_modules`
+- `make build`: Build `github-dark.user.css`
+- `make install`: Install `github-dark.user.css`
+- `make lint`: Run linters
+- `make clean`: Format source files
+
+Lesser used targets include:
+
+- `make authors`: Regenerate the `AUTHORS` file based on git history
+- `make update`: Update dependencies
+- `make`: Alias for `make build`
+
+Internal use only targets include:
+
+- `make patch`: Increment the patch version, create a commit and push it
+- `make minor`: Increment the minor version, create a commit and push it
+- `make major`: Increment the major version, create a commit and push it
+
 ## Notes
 
 - If you're using a custom domain for GitHub Enterprise, be sure to include it through a `@-moz-document` rule (Firefox) or add it to the `Applies to` section in (Chrome).
 
-## Contributions
+Thanks to all our [contributors](./AUTHORS) so far! And thanks for the shoutout on the [JS Party](https://changelog.com/jsparty/20#transcript-71) podcast!
 
-If you would like to contribute to this repository, please...
-
-1. 👓 Read the [contribution guidelines](./.github/CONTRIBUTING.md).
-1. [![fork](https://user-images.githubusercontent.com/136959/42383736-c4cb0db8-80fd-11e8-91ca-12bae108bccc.png) Fork](https://github.com/StylishThemes/GitHub-Dark/fork) or [![cloud-download](https://user-images.githubusercontent.com/136959/42401932-9ee9cae0-813d-11e8-8691-16e29a85d3b9.png) download](https://github.com/StylishThemes/GitHub-Dark/archive/master.zip) this repository.
-1. 👌 Create a pull request!
-
-## Development
-
-To develop, first install [Node.js](https://nodejs.org) 12 or greater, then install dependencies via `npm install` after which you can use the various commands available:
-
-- `npm run build`: Runs the `generate` and `usercss` tasks.
-- `npm run usercss`: Build a [Usercss](https://github.com/openstyles/stylus/wiki/Usercss) style.
-- `npm run themes`: Parse all theme files and combine them into minified styles in the `themes` directory.
-- `npm run clean`: Reformat `github-dark.css` to conform the style guide.
-- `npm run lint`: Run Stylelint on `github-dark.css`.
-- `npm run authors`: Regenerate the `AUTHORS` file based on git history.
-- `npm run imagemin`: Minify all images present in the `image` directory.
-- `npm run generate`: Regenerate auto-generated CSS rules based on GitHub's stylesheet. Run this regularly.
-- `npm run patch`: Increment the version on the patch version number, update headers and create a commit.
-- `npm run minor`: Increment the version on the minor version number, update headers and create a commit.
-- `npm run major`: Increment the version on the major version number, update headers and create a commit.
-- `npm run update`: Update and install dependencies.
-
-Thanks to all that have [contributed](./AUTHORS) so far!
-
-And thanks for the shoutout on the [JS Party](https://changelog.com/jsparty/20#transcript-71) podcast!
+[⬆️ UP](#toc)
